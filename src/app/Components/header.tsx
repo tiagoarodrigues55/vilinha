@@ -7,11 +7,11 @@ export default function Header() {
       <div>
         <img src="/images/Logo.jpg" width={150} height={140} />
       </div>
-      <div className="flex items-center font-normal font-serif text-3xl text-white" style={{ fontFamily: 'Dancing Script, cursive' }}>
-          <a href="/" className="mx-2">Cardápio</a>
-          <a href="/"  className="mx-2">Espaço</a>
-          <a href="/" className="mx-2">Evento</a>
-          <a href="/"  className="mx-2">Fotos</a>
+      <div className="flex items-center font-normal font-serif text-3xl text-white" style={{ fontFamily: 'Cedarville Cursive, cursive'}}>
+          <a href="/" className="mx-4 transition-transform duration-300 hover:text-green-600 transition-colors hover:bg-gray-200 p-4 rounded-md">Cardápio</a>
+          <a href="/"  className="mx-4">Espaço</a>
+          <a href="/" className="mx-4">Evento</a>
+          <a href="/"  className="mx-4">Fotos</a>
         </div>
       </div>
     </header>
