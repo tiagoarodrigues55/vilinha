@@ -8,10 +8,10 @@ export default function Header() {
         <img src="/images/Logo.jpg" width={150} height={140} />
       </div>
       <div className="hidden sm:flex items-center font-normal font-serif text-4xl text-white" style={{ fontFamily: 'Cedarville Cursive, cursive'}}>
-          <a href="/" className="mx-4 transition-transform duration-300 hover:text-green-600 transition-colors hover:bg-gray-200 p-4 rounded-md">Cardápio</a>
-          <a href="/"  className="mx-4 transition-transform duration-300 hover:text-green-600 transition-colors hover:bg-gray-200 p-4 rounded-md">Espaço</a>
-          <a href="/" className="mx-4 transition-transform duration-300 hover:text-green-600 transition-colors hover:bg-gray-200 p-4 rounded-md">Evento</a>
-          <a href="/"  className="mx-4 transition-transform duration-300 hover:text-green-600 transition-colors hover:bg-gray-200 p-4 rounded-md">Fotos</a>
+          <a href="#cardapio" className="mx-4 transition-transform duration-300 hover:text-green-600 transition-colors hover:bg-gray-200 p-4 rounded-md">Cardápio</a>
+          <a href="#espaco"  className="mx-4 transition-transform duration-300 hover:text-green-600 transition-colors hover:bg-gray-200 p-4 rounded-md">Espaço</a>
+          <a href="#evento" className="mx-4 transition-transform duration-300 hover:text-green-600 transition-colors hover:bg-gray-200 p-4 rounded-md">Evento</a>
+          <a href="#fotos"  className="mx-4 transition-transform duration-300 hover:text-green-600 transition-colors hover:bg-gray-200 p-4 rounded-md">Fotos</a>
         </div>
       </div>
     </header>
