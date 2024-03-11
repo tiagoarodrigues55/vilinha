@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Daydream';
+  src: url('./font/daydream.ttf') format('truetype'); /* ou o formato adequado */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
-    font-family: "Cedarville Cursive", cursive;
+    font-family: "Daydream" ;
   }
