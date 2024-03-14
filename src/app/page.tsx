@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Header from "./Components/header";
+import { EmblaCarousel } from "./Components/Carousel";
+
+
 
 export default function Home() {
   return (
@@ -223,6 +226,18 @@ export default function Home() {
         </div>
       </div>
       </div>
+
+      {/* Carrosel Fotos */}
+      <div id="carrosel" style={{
+      backgroundImage: "url('/images/background.jpg')",
+      backgroundSize: '100% 100%',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      minHeight: '80vh', // Altura mínima para cobrir toda a tela
+      // Outros estilos conforme necessário
+    }}>
+      <EmblaCarousel />
+    </div>
       {/* Div video */}
       <div className="relative" style={{ fontFamily: 'Daydream' }}>
     <video className="w-screen" controls autoPlay loop muted>
