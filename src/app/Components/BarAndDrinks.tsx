@@ -19,7 +19,7 @@ export function BarAndDrinks() {
         style={{ fontFamily: 'Daydream' }}
       >
         <h1 className="text-8xl font-normal text-center">Bar e Drinks</h1>
-        <div className="flex lg:gap-0 gap-5 md:flex-tow flex-col justify-center items-center">
+        <div className="flex lg:gap-0 gap-5 md:flex-row flex-col justify-center items-center">
           <div className="">
             <p className="mt-10 text-3xl sm:text-6xl  text-center font-normal">
               {' '}
@@ -38,18 +38,18 @@ export function BarAndDrinks() {
               a maneira de fazer drinks...{' '}
             </p>
           </div>
-          <div className="grid-cols-3 gap-2 items-center grid lg:grid-cols-2">
+          <div className="grid-cols-3 gap-2 items-center grid md:grid-cols-2">
             <img
               src="/images/drink2.jpg"
-              className="w-48 h-60 lg:ml-10 m-auto rounded-3xl border border-[#244D0C] border-4 "
+              className="w-48 h-60 md:ml-10 m-auto rounded-3xl border border-[#244D0C] border-4 "
             />
             <img
               src="/images/drink1.jpg"
-              className="lg:mt-40 lg:ml-6 w-36 h-48 rounded-2xl border border-[#244D0C] border-4 lg:transform lg:translate-y-1/2"
+              className="md:mt-40 md:ml-6 w-36 h-48 rounded-2xl border border-[#244D0C] border-4 md:transform md:translate-y-1/2"
             />
             <img
               src="/images/drink.jpg"
-              className="lg:ml-24 lg:m-auto w-46 h-56 rounded-2xl border border-[#244D0C] border-4"
+              className="md:ml-24 md:m-auto w-46 h-56 rounded-2xl border border-[#244D0C] border-4"
             />
           </div>
         </div>

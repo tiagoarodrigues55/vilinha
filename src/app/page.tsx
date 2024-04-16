@@ -49,8 +49,7 @@ export default function Home() {
           backgroundSize: '100% 100%',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
-          minHeight: '100vh', // Altura mínima para cobrir toda a tela
-          // Outros estilos conforme necessário
+          minHeight: '100vh',
         }}
         className="flex items-center justify-center"
       >
@@ -58,7 +57,6 @@ export default function Home() {
       </div>
 
       <Location />
-      {/* Div video */}
       <div className="relative" style={{ fontFamily: 'Daydream' }}>
         <div className="w-[160px] sm:block hidden h-[60px] md:w-[200px] md:h-[80px] absolute top-8 left-8 z-50">
           <Image src="/images/logo.png" fill alt="Logo" />
@@ -73,22 +71,6 @@ export default function Home() {
           </h1>
         </div>
       </div>
-      {/* <div className="relative min-h-screen" style={{ fontFamily: 'Daydream' }}>
-        <div className="md:w-[200px] md:h-[80px] absolute top-8 left-8">
-          <Image src="/images/logo.png" fill alt="Logo" />
-        </div>
-
-        <video className="w-screen h-screen" controls autoPlay loop muted>
-          <source src="/images/vilinhavideo.mp4" type="video/mp4" />
-        </video>
-
-        <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center text-white">
-          <h1 className="text-4xl sm:text-7xl font-normal text-center text-white">
-            Venha para o vilinha bar e celebre a vida da melhor maneira
-            possivel!
-          </h1>
-        </div>
-      </div> */}
     </div>
   )
 }
