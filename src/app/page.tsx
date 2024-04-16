@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Header from './Components/header'
-import { CarouselSize, EmblaCarousel } from './Components/Carousel'
+import { CarouselSize } from './Components/Carousel'
 import { Space } from './Components/Space'
 import { Vilinha } from './Components/Vilinha'
 import { Restaurant } from './Components/Restaurant'
