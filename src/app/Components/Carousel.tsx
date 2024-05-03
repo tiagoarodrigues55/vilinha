@@ -60,8 +60,6 @@ export function CarouselSize() {
     '/images/aniversario.jpg',
     '/images/Logo.jpg',
     '/images/girls.jpg',
-    '/images/Logo.jpg',
-    '/images/aniversario.jpg',
   ]
   return (
     <Carousel
@@ -76,7 +74,7 @@ export function CarouselSize() {
             key={index}
             className="basis-full sm:basis-1/2 md:basis-1/3"
           >
-            <div className="p-1 relative h-[250px] md:h-[450px]">
+            <div className="relative h-[250px] md:h-[450px] object-contain">
               <Image src={src} alt="oi" fill />
             </div>
           </CarouselItem>

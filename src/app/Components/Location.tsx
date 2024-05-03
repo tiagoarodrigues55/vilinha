@@ -1,3 +1,4 @@
+import { links } from '@/lib/constants'
 import { Link } from './Link'
 
 export function Location() {
@@ -18,16 +19,16 @@ export function Location() {
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 w-full items-center gap-12">
-          <div className="flex flex-col text-4xl font-serif gap-12 text-[#244D0C]">
-            <div className="flex gap-2 items-center">
+          <div className="flex flex-col text-2xl md:text-4xl font-serif gap-6 md:gap-12 text-[#244D0C]">
+            <a href={links.instagram} target="_blank" className="flex gap-2 items-center">
               <span>@Villinhaoficial</span>
-            </div>
-            <div className="flex gap-2 items-center">
+            </a>
+            <a href={links.google} target="_blank" className="flex gap-2 items-center">
               <span>R. Quatá, 293 - Vila Olímpia</span>
-            </div>
-            <div className="flex gap-2 items-center">
+            </a>
+            <a href={links.whatsapp.link} target="_blank" className="flex gap-2 items-center">
               <span>(11) 97242 - 4746</span>
-            </div>
+            </a>
           </div>
           <div
             style={{
@@ -42,12 +43,12 @@ export function Location() {
               height="100%"
               src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=-23.598705912956795,%20-46.676608377998846+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             >
-              <a href="https://www.gps.ie/">gps tracker sport</a>
+              {/* <a href="https://www.gps.ie/">gps tracker sport</a> */}
             </iframe>
           </div>
         </div>
 
-        <Link>Venha nos conhecer</Link>
+        <Link href={links.maps} target="_blank">Venha nos conhecer</Link>
       </div>
     </section>
   )

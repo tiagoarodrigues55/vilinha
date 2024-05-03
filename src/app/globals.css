@@ -16,3 +16,7 @@
 body {
     font-family: "Daydream" ;
   }
+
+html {
+  scroll-behavior: smooth;
+}

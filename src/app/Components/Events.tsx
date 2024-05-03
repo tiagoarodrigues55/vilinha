@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import { Link } from './Link'
+import { links } from '@/lib/constants'
 
 export function Events() {
   return (
     <div
-      id="espaco"
       style={{
         backgroundImage: "url('/images/section-dark-green.png')",
         backgroundSize: '100% 100%',
@@ -44,7 +44,7 @@ export function Events() {
             </div>
           </div>
         </div>
-        <Link>Listas</Link>
+        <Link href={links.whatsapp.link}>Listas</Link>
       </div>
     </div>
   )

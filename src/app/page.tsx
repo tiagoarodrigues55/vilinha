@@ -10,19 +10,13 @@ import { Events } from './Components/Events'
 import { PrivateEvents } from './Components/PrivateEvents'
 import { BarAndDrinks } from './Components/BarAndDrinks'
 import { Location } from './Components/Location'
+import { Link } from './Components/Link'
+import { links } from '@/lib/constants'
 
 export default function Home() {
   return (
     <div style={{ fontFamily: 'Daydream' }}>
-      {/* Link Google Fonts */}
-      {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"
-        rel="stylesheet"
-      /> */}
       <Header />
-      {/* Div video */}
       <div className="relative" style={{ fontFamily: 'Daydream' }}>
         <video className="w-screen h-4/5" controls autoPlay loop muted>
           <source src="/images/vilinhavideo.mp4" type="video/mp4" />
@@ -43,7 +37,7 @@ export default function Home() {
 
       <BarAndDrinks />
       <div
-        id="carrosel"
+        id="fotos"
         style={{
           backgroundImage: "url('/images/section-bg.png')",
           backgroundSize: '100% 100%',
@@ -53,7 +47,16 @@ export default function Home() {
         }}
         className="flex items-center justify-center"
       >
-        <CarouselSize />
+        <div className='flex flex-col gap-16 w-full py-8'>
+          <h1 className="text-6xl font-normal text-center text-green-800">
+            Fotos
+          </h1>
+          <div className='flex justify-center w-full'>
+            <CarouselSize />
+          </div>
+
+          <Link href={links.photos}>Fotos</Link>
+        </div>
       </div>
 
       <Location />
@@ -65,10 +68,12 @@ export default function Home() {
           <source src="/images/vilinhavideo.mp4" type="video/mp4" />
         </video>
 
-        <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center text-white">
-          <h1 className="text-4xl sm:text-8xl font-normal text-center text-white px-2">
-            Sua praia no coração de São Paulo!
+        <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col gap-2 justify-center items-center text-white">
+          <h1 className="text-3xl sm:text-5xl md:text-8xl font-normal text-center text-white px-2">
+            Venha para o Vilinha Bar e celebre a vida da melhor maneira possível!
           </h1>
+
+          <Link href={links.maps}>Venha nos visitar!</Link>
         </div>
       </div>
     </div>

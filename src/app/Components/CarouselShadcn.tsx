@@ -204,7 +204,7 @@ const CarouselPrevious = React.forwardRef<
     <button
       disabled={!canScrollPrev}
       onClick={scrollPrev}
-      className="absolute p-6 md:p-8 rounded-full bg-transparent border border-white -translate-y-1/2 top-1/2 left-8"
+      className="absolute p-6 md:p-8 cursor-pointer rounded-full bg-transparent border border-white -translate-y-1/2 top-1/2 left-8"
     >
       <ArrowLeftIcon className="h-8 w-8 md:h-12 md:w-12 text-white" />
       <span className="sr-only">Previous slide</span>
@@ -223,7 +223,7 @@ const CarouselNext = React.forwardRef<
     <button
       disabled={!canScrollNext}
       onClick={scrollNext}
-      className="absolute p-6 md:p-8 rounded-full bg-transparent border border-white  -translate-y-1/2 top-1/2 right-8"
+      className="absolute p-6 md:p-8 cursor-pointer rounded-full bg-transparent border border-white  -translate-y-1/2 top-1/2 right-8"
     >
       <ArrowRightIcon className="h-8 w-8 md:h-12 md:w-12 text-white" />
       <span className="sr-only">Previous slide</span>

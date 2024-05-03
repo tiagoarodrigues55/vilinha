@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Link } from './Link'
+import { CarouselOne } from './CarouselOne'
 
 export function Restaurant() {
   return (
@@ -11,7 +12,7 @@ export function Restaurant() {
         backgroundRepeat: 'no-repeat',
         minHeight: '100vh', // Altura mínima para cobrir toda a tela
       }}
-      className="flex items-center justify-center relative"
+      className="flex items-center justify-center relative py-8"
     >
       <Image
         src="/images/logo.png"
@@ -25,8 +26,8 @@ export function Restaurant() {
           Restaurante
         </h2>
 
-        <div className="md:flex grid grid-cols-[160px_1fr] w-full items-center gap-8">
-          <div className="flex md:flex-row flex-col-reverse items-center gap-5 w-full max-w-[200px] md:min-w-[450px]">
+        <div className="flex-col sm:flex-row flex w-full md:items-center gap-8">
+          {/* <div className="flex md:flex-row flex-col-reverse items-center gap-5 w-full max-w-[200px] md:min-w-[450px]">
             <div className="relative w-full h-[120px] md:h-[200px]">
               <Image
                 src="/images/burguer.jpg"
@@ -53,15 +54,14 @@ export function Restaurant() {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
+          <CarouselOne className='mx-0' />
           <p className="text-3xl sm:text-5xl text-center font-normal leading-[1] sm:leading-[1.5]">
-            Temos pratos executivos, lanches, porções e o melhor da comida
-            brasileira para que você possa se deliciar enquanto aprecia o
-            ambiente e uma boa música...
+              O villinha tem pratos executivos, lanches, porções e o melhor da comida brasileira para você aproveitar o máximo de sua experiência.
           </p>
         </div>
 
-        <Link>Venha conheceer</Link>
+        <Link>Cardápio</Link>
       </div>
     </div>
   )

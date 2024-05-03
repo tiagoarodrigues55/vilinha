@@ -3,7 +3,6 @@ import { Link } from './Link'
 export function BarAndDrinks() {
   return (
     <div
-      id="fotos"
       style={{
         backgroundImage: "url('/images/section-dark-green.png')",
         backgroundSize: '100% 100%',

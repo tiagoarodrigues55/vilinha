@@ -1,16 +1,18 @@
 import Image from 'next/image'
 import { Link } from './Link'
+import { links } from '@/lib/constants'
 
 export function Vilinha() {
   return (
     <div
       style={{
         backgroundImage:
-          "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/vilinha.jpg')",
+          "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/vilinha.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         minHeight: '100vh', // Altura mínima para cobrir toda a tela
+        // linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url('/images/section-bg.png')
         // Outros estilos conforme necessário
       }}
       className="flex items-center justify-center relative"
@@ -28,14 +30,11 @@ export function Vilinha() {
         </h2>
 
         <p className="text-3xl sm:text-5xl text-center font-normal max-w-4xl leading-[1.5] sm:leading-[1.5]">
-          Buscamos trazer a tranquilidade e aconchego da praia no coração de São
-          Paulo. Oferecemos um refúgio urbano com drinks e comifas , uma ótima
-          comida e uma atmosfera que remete ao relaxamento à beira-mar. Venha
-          viver momentos inesqueciveis no seu pedacinho de praia em plena
-          cidade.
+          Com uma atmosfera diferenciada é muito mais do que um bar, uma casa de festas ou um espaço de eventos. 
+          Venha viver momentos inesquecíveis no seu pedacinho de praia no coração da cidade
         </p>
 
-        <Link>Venha conheceer</Link>
+        <Link href={links.maps} target="_blank">Venha conheceer</Link>
       </div>
     </div>
   )
