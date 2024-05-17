@@ -61,7 +61,7 @@ export function Restaurant() {
           </p>
         </div>
 
-        <Link>Cardápio</Link>
+        <Link href="https://acuolina.com/pt/villinhabar">Cardápio</Link>
       </div>
     </div>
   )

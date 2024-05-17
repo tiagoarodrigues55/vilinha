@@ -14,13 +14,22 @@ export function Space() {
       className="flex items-center"
       id="espaco"
     >
-      <div className="mx-auto grid items-center md:py-0 py-8 grid-cols-1 md:grid-cols-[280px_1fr] gap-14 w-full max-w-6xl px-4">
+      <div id="video" className="mx-auto grid items-center md:py-0 py-8 grid-cols-1 md:grid-cols-[280px_1fr] gap-14 w-full max-w-6xl px-4">
         <div className="h-[400px] md:h-[600px] md:mx-0 mx-auto w-[200px] md:w-[280px] bg-red-500 rounded-3xl border-[8px] relative border-black">
           <div className="top-0 bg-black rounded-b-3xl mx-auto h-8 w-2/3 flex justify-center items-center gap-1">
             <div className="h-2 bg-gray-400 w-8 rounded-full"></div>
+            
             <div className="h-2 bg-gray-400 w-3 rounded-full"></div>
+
           </div>
+          <video 
+            controls
+          >
+            <source src="/images/welcome.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
+
         <div className="flex flex-col gap-12">
           <h2 className="text-7xl font-bold text-green-800">Nosso Espaço</h2>
 

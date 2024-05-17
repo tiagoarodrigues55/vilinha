@@ -1,8 +1,8 @@
 export const links = {
   instagram: "https://www.instagram.com/villinhabar?igsh=a2Nqb2htbjNrYnQ5",
   whatsapp: {
-    number: "(11) 93314-5898",
-    link: "https://api.whatsapp.com/send?phone=5511933145898&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20villinha!!"
+    number: "(11) 91609-4481",
+    link: "https://api.whatsapp.com/send?phone=5511916094481&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20villinha!!"
   },
   google: "https://www.google.com/search?sca_esv=619c697d276fe56b&rlz=1CDGOYI_enBR1056BR1057&hl=pt&sxsrf=ACQVn0-QTWlEn94NblAXssBfOVSbvVuB3w:1713992801753&q=Villinha&ludocid=6667539522447950351&lsig=AB86z5V3TBv0Id1OZZf2VJgA9ZBO&source=sh/x/loc/act/m1/3&kgs=9c8ac39ea7f30b43&shem=lcbsha&shbud=45D31089720C6EC0/0/1&bsp=CgISAA%3D%3D",
   photos: "https://drive.google.com/drive/folders/1zBpg4kiir_ZK10_5NEMi_ZvZMWlmPga8",

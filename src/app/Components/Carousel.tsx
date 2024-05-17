@@ -12,16 +12,21 @@ interface ImageDimensions {
   src: string;
   width: number;
   height: number;
+  adjustedWidth: number;
 }
 
 export function CarouselSize() {
   const [imageDimensions, setImageDimensions] = React.useState<ImageDimensions[]>([])
+  const fixedHeight = 300; // Altura fixa em pixels
 
   React.useEffect(() => {
     const images = [
       '/images/aniversario.jpg',
-      '/images/Logo.jpg',
       '/images/girls.jpg',
+      '/images/img1.jpg',
+      '/images/img2.jpg',
+      '/images/img3.jpg',
+      '/images/img4.jpg',
     ]
 
     const loadImages = async () => {
@@ -30,10 +35,13 @@ export function CarouselSize() {
           const img = new window.Image()
           img.src = src
           img.onload = () => {
+            const aspectRatio = img.width / img.height;
+            const adjustedWidth = fixedHeight * aspectRatio;
             resolve({
               src,
               width: img.width,
-              height: img.height
+              height: img.height,
+              adjustedWidth
             })
           }
           img.onerror = () => reject(new Error(`Failed to load image ${src}`))
@@ -50,7 +58,7 @@ export function CarouselSize() {
       opts={{
         align: 'start',
       }}
-      className="w-full max-w-6xl mx-4 relative"
+      className="w-full max-w-6xl mx-4 relative p-2"
     >
       <CarouselContent>
         {imageDimensions.map((image, index) => (
@@ -58,12 +66,12 @@ export function CarouselSize() {
             key={index}
             className="basis-full sm:basis-1/2 md:basis-1/3"
           >
-            <div className="relative">
+            <div className="relative" style={{ width: image.adjustedWidth, height: fixedHeight }}>
               <Image 
                 src={image.src} 
                 alt={`Image ${index}`} 
-                width={image.width} 
-                height={image.height} 
+                width={image.adjustedWidth} 
+                height={fixedHeight} 
                 layout="intrinsic" 
               />
             </div>
