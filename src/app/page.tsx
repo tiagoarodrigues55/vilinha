@@ -15,9 +15,9 @@ import { links } from '@/lib/constants'
 
 export default function Home() {
   return (
-    <div style={{ fontFamily: 'Daydream' }}>
+    <div >
       <Header />
-      <div className="relative" style={{ fontFamily: 'Daydream' }}>
+      <div className="relative" >
         <video className="w-screen h-4/5" autoPlay loop muted>
           <source src="/images/vilinhavideo.mp4" type="video/mp4" />
         </video>
@@ -60,7 +60,7 @@ export default function Home() {
       </div>
 
       <Location />
-      <div className="relative" style={{ fontFamily: 'Daydream' }}>
+      <div className="relative" >
         <div className="w-[160px] sm:block hidden h-[60px] md:w-[200px] md:h-[80px] absolute top-8 left-8 z-50">
           <Image src="/images/logo.png" fill alt="Logo" />
         </div>
