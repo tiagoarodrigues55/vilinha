@@ -1,12 +1,12 @@
-import * as React from 'react'
+import * as React from 'react';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from './CarouselShadcn'
-import Image from 'next/image'
+} from './CarouselShadcn';
+import Image from 'next/image';
 
 interface ImageDimensions {
   src: string;
@@ -16,7 +16,7 @@ interface ImageDimensions {
 }
 
 export function CarouselSize() {
-  const [imageDimensions, setImageDimensions] = React.useState<ImageDimensions[]>([])
+  const [imageDimensions, setImageDimensions] = React.useState<ImageDimensions[]>([]);
   const fixedHeight = 300; // Altura fixa em pixels
 
   React.useEffect(() => {
@@ -27,13 +27,13 @@ export function CarouselSize() {
       '/images/img2.jpg',
       '/images/img3.jpg',
       '/images/img4.jpg',
-    ]
+    ];
 
     const loadImages = async () => {
       const dimensions = await Promise.all(images.map(src => {
         return new Promise<ImageDimensions>((resolve, reject) => {
-          const img = new window.Image()
-          img.src = src
+          const img = new window.Image();
+          img.src = src;
           img.onload = () => {
             const aspectRatio = img.width / img.height;
             const adjustedWidth = fixedHeight * aspectRatio;
@@ -41,38 +41,38 @@ export function CarouselSize() {
               src,
               width: img.width,
               height: img.height,
-              adjustedWidth
-            })
-          }
-          img.onerror = () => reject(new Error(`Failed to load image ${src}`))
-        })
-      }))
-      setImageDimensions(dimensions)
-    }
+              adjustedWidth,
+            });
+          };
+          img.onerror = () => reject(new Error(`Failed to load image ${src}`));
+        });
+      }));
+      setImageDimensions(dimensions);
+    };
 
-    loadImages()
-  }, [])
+    loadImages();
+  }, []);
 
   return (
     <Carousel
       opts={{
-        align: 'start',
+        align: 'center',
       }}
-      className="w-full max-w-6xl mx-4 relative p-2"
+      className="w-full  mx-auto relative px-10"
     >
       <CarouselContent>
         {imageDimensions.map((image, index) => (
           <CarouselItem
             key={index}
-            className="basis-full sm:basis-1/2 md:basis-1/3"
+            className="basis-full sm:basis-1/2 md:basis-1/3 px-10" 
           >
             <div className="relative" style={{ width: image.adjustedWidth, height: fixedHeight }}>
-              <Image 
-                src={image.src} 
-                alt={`Image ${index}`} 
-                width={image.adjustedWidth} 
-                height={fixedHeight} 
-                layout="intrinsic" 
+              <Image
+                src={image.src}
+                alt={`Image ${index}`}
+                width={image.adjustedWidth}
+                height={fixedHeight}
+                layout="intrinsic"
               />
             </div>
           </CarouselItem>
@@ -81,5 +81,5 @@ export function CarouselSize() {
       <CarouselPrevious />
       <CarouselNext />
     </Carousel>
-  )
+  );
 }

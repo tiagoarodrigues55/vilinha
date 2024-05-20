@@ -16,6 +16,8 @@ export function CarouselOne(props: { className?: React.ComponentProps<"div">["cl
     '/images/burguer.jpg',
     '/images/pasteis.jpg',
     '/images/prato.jpg',
+    '/images/porcao.jpeg',
+    '/images/hamburguer.jpeg',
   ]
   return (
     <Carousel
@@ -28,7 +30,7 @@ export function CarouselOne(props: { className?: React.ComponentProps<"div">["cl
         {images.map((src, index) => (
           <CarouselItem
             key={index}
-            className="basis-full"
+            className="basis-full min-w-0 shrink-0 grow-0 basis-full"
           >
             <div className="relative h-[250px] md:h-[380px] object-contain rounded-md overflow-hidden">
               <Image src={src} alt="oi" fill />

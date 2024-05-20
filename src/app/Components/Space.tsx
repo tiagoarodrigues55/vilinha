@@ -23,7 +23,9 @@ export function Space() {
 
           </div>
           <video 
-            controls
+            autoPlay
+            loop
+            muted
             className='absolute object-fill top-0 bottom-0 w-full h-full'
           >
             <source src="/images/welcome.mp4" type="video/mp4" />

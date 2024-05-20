@@ -55,6 +55,7 @@ export function Restaurant() {
               </div>
             </div>
           </div> */}
+        '',
           <CarouselOne className='mx-0' />
           <p className="text-3xl sm:text-5xl text-center font-normal leading-[1] sm:leading-[1.5]">
               O villinha tem pratos executivos, lanches, porções e o melhor da comida brasileira para você aproveitar o máximo de sua experiência.

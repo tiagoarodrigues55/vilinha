@@ -18,7 +18,7 @@ export default function Home() {
     <div style={{ fontFamily: 'Daydream' }}>
       <Header />
       <div className="relative" style={{ fontFamily: 'Daydream' }}>
-        <video className="w-screen h-4/5" controls autoPlay loop muted>
+        <video className="w-screen h-4/5" autoPlay loop muted>
           <source src="/images/vilinhavideo.mp4" type="video/mp4" />
         </video>
 
@@ -64,12 +64,12 @@ export default function Home() {
         <div className="w-[160px] sm:block hidden h-[60px] md:w-[200px] md:h-[80px] absolute top-8 left-8 z-50">
           <Image src="/images/logo.png" fill alt="Logo" />
         </div>
-        <video className="w-screen" controls autoPlay loop muted>
+        <video className="w-screen" autoPlay loop muted>
           <source src="/images/vilinhavideo.mp4" type="video/mp4" />
         </video>
 
         <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col gap-2 justify-center items-center text-white">
-          <h1 className="text-3xl sm:text-5xl md:text-8xl font-normal text-center text-white px-2">
+          <h1 className="text-3xl sm:text-5xl md:text-8xl font-normal text-center text-white p-4">
             Venha para o Vilinha Bar e celebre a vida da melhor maneira possível!
           </h1>
 
