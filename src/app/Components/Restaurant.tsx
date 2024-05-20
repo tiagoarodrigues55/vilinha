@@ -27,35 +27,6 @@ export function Restaurant() {
         </h2>
 
         <div className="flex-col sm:flex-row flex w-full md:items-center gap-8">
-          {/* <div className="flex md:flex-row flex-col-reverse items-center gap-5 w-full max-w-[200px] md:min-w-[450px]">
-            <div className="relative w-full h-[120px] md:h-[200px]">
-              <Image
-                src="/images/burguer.jpg"
-                alt="Pasteis"
-                className="border-[8px] border-[#244D0C] rounded-[40px]"
-                fill
-              />
-            </div>
-            <div className="flex flex-col gap-5 md:gap-8 w-full">
-              <div className="relative w-full h-[200px] md:h-[300px]">
-                <Image
-                  src="/images/pasteis.jpg"
-                  alt="Pasteis"
-                  className="border-[8px] border-[#244D0C] rounded-[40px]"
-                  fill
-                />
-              </div>
-              <div className="relative w-full h-[120px] md:h-[200px] mr-8">
-                <Image
-                  src="/images/prato.jpg"
-                  alt="Pasteis"
-                  className="border-[8px] border-[#244D0C] rounded-[40px]"
-                  fill
-                />
-              </div>
-            </div>
-          </div> */}
-        '',
           <CarouselOne className='mx-0' />
           <p className="text-3xl sm:text-5xl text-center font-normal leading-[1] sm:leading-[1.5]">
               O villinha tem pratos executivos, lanches, porções e o melhor da comida brasileira para você aproveitar o máximo de sua experiência.
