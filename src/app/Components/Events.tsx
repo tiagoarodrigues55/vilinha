@@ -32,15 +32,15 @@ export function Events() {
           </div>
           <div className="flex md:w-auto w-full flex-col gap-4">
             <div className="flex justify-center items-end gap-4">
-              <div className="overflow-hidden relative w-32 h-56 sm:w-48 sm:h-72 rounded-2xl border-4 border-[#244D0C]">
-                <Image src="/images/cantor.jpg" fill alt="Turma" />
+              <div className="relative w-32 sm:w-48 rounded-2xl border-4 border-[#244D0C]">
+                <Image src="/images/cantor.jpg" layout="responsive" width={320} height={560} alt="Cantor" />
               </div>
-              <div className="overflow-hidden relative w-40 h-36 sm:w-64 sm:h-48 rounded-2xl border-4 border-[#244D0C]">
-                <Image src="/images/meninas.jpg" fill alt="Turma" />
+              <div className="relative w-40 sm:w-64 rounded-2xl border-4 border-[#244D0C]">
+                <Image src="/images/meninas.jpg" layout="responsive" width={400} height={360} alt="Meninas" />
               </div>
             </div>
-            <div className="overflow-hidden relative w-56 h-40 sm:w-96 sm:h-56 rounded-2xl border-4 border-[#244D0C] mx-auto">
-              <Image src="/images/turma.jpg" fill alt="Turma" />
+            <div className="relative w-56 sm:w-96 rounded-2xl border-4 border-[#244D0C] mx-auto">
+              <Image src="/images/turma.jpg" layout="responsive" width={560} height={400} alt="Turma" />
             </div>
           </div>
         </div>

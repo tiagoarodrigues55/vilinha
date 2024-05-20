@@ -17,13 +17,14 @@ export function Vilinha() {
       }}
       className="flex items-center justify-center relative"
     >
-      <Image
-        src="/images/logo.png"
-        width={200}
-        height={80}
-        alt="Logo"
-        className="absolute top-8 left-8"
-      />
+      <div className="absolute top-8 left-8 hidden md:block">
+        <Image
+          src="/images/logo.png"
+          width={200}
+          height={80}
+          alt="Logo"
+        />
+      </div>
       <div className="flex flex-col justify-center items-center gap-14 text-white px-4">
         <h2 className="mt-24 text-7xl font-normal text-center lg:mx-auto shadow-2xl">
           O Villinha
