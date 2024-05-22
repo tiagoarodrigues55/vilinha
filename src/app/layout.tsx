@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import {WhatsappButton} from "./components/WhatsappButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,8 @@ export default function RootLayout({
         <title>Villinha</title>
         <meta name="description" content="Villinha" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}           style={{ fontFamily: 'Daydream' }}>{children}</body>
+      <WhatsappButton/>
     </html>
   );
 }
