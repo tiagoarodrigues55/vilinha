@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import {WhatsappButton} from "./components/WhatsappButton";
+import {WhatsappButton} from "./Components/WhatsappButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
