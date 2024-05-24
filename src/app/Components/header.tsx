@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { Link } from './Link'
 
 export default function Header() {
   return (
@@ -16,12 +17,8 @@ export default function Header() {
           className="flex md:gap-8 gap-4 items-center font-normal font-serif text-xs sm:text-lg md:text-2xl lg:text-4xl text-white"
           style={{ fontFamily: 'Daydream' }}
         >
-          <a
-            href="#cardapio"
-            className="hover:text-green-600 transition-colors hover:bg-gray-200 p-4 rounded-md"
-          >
-            Cardápio
-          </a>
+
+            <Link className="hover:text-green-600 transition-colors hover:bg-gray-200 p-4 rounded-md" href="https://acuolina.com/pt/villinhabar">Cardápio</Link>
           <a
             href="#espaco"
             className="hover:text-green-600 transition-colors hover:bg-gray-200 p-4 rounded-md"

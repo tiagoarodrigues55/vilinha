@@ -15,7 +15,7 @@ import { links } from '@/lib/constants'
 
 export default function Home() {
   return (
-    <div >
+    <div className="font-serif font-semibold" >
       <Header />
       <div className="relative" >
         <video className="w-screen h-4/5" autoPlay loop muted>

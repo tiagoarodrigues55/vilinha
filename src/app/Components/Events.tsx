@@ -5,6 +5,7 @@ import { links } from '@/lib/constants'
 export function Events() {
   return (
     <div
+      id="evento"
       style={{
         backgroundImage: "url('/images/section-dark-green.png')",
         backgroundSize: '100% 100%',

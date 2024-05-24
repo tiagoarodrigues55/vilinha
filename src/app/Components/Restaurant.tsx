@@ -12,7 +12,7 @@ export function Restaurant() {
         backgroundRepeat: 'no-repeat',
         minHeight: '100vh', // Altura mínima para cobrir toda a tela
       }}
-      className="flex items-center justify-center relative py-8"
+      className="flex items-center justify-center relative py-8 px-2"
     >
       <Image
         src="/images/logo.png"
@@ -22,9 +22,9 @@ export function Restaurant() {
         className="absolute top-8 left-8"
       />
       <div className="flex lg:py-0 w-full pb-16 pt-40 flex-col max-w-6xl justify-center items-center gap-14 text-green-800 px-4">
-        <h2 className="text-7xl font-normal text-center lg:mx-auto">
+        <h1 className="text-7xl font-normal text-center lg:mx-auto px-2">
           Restaurante
-        </h2>
+        </h1>
 
         <div className="flex-col sm:flex-row flex w-full md:items-center gap-8">
           <CarouselOne className='mx-0' />
